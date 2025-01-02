@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore World Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+        #map { height: 100%; }
+        #auth-container, #loading { display: flex; justify-content: center; align-items: center; height: 100%; }
+        #auth-container { flex-direction: column; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div id="auth-container">
+        <h1>Explore World Map</h1>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button id="login-btn">Login</button>
+        <p id="error-msg" style="color: red;"></p>
+    </div>
+    <div id="map" class="hidden"></div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
